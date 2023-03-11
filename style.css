@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color:gray;
+}
+.main{
+    background-color: rgb(153, 153, 153);
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+}
+button{
+    margin: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgb(209, 207, 207);
+    font: 1em sans-serif;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(185, 184, 184) ;
+}
+button:active{
+    transform: translateY(4px);
+}
+
+
