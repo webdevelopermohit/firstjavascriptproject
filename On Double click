@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Click</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(238, 84, 84);
+        }
+        button{
+            font-size: 2rem;
+            border: none;
+            background-color: red;
+            padding: 1rem 1.5rem;
+            border-radius: 0.5rem;
+        }
+        button:active{
+            transform: translateY(3px);
+        }
+    </style>
+</head>
+<body>
+    <button ondblclick="onclickfunction()">Double Click Me</button>
+    <script>
+        function onclickfunction(){
+            alert("Thankyou for click Me")
+        }
+    </script>
+</body>
+</html>
