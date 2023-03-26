@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Click</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:lightgreen;
+            color: white;
+        }
+        button{
+            font-size: 2rem;
+            border: none;
+            background-color:rgb(84, 233, 84);
+            padding: 1rem 1.5rem;
+            border-radius: 0.5rem;
+            color: white;
+        }
+        button:active{
+            transform: translateY(3px);
+        }
+        .center{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+    <button onmouseover="onclickfunction()">MOUSE OVER</button>
+    <p>***ON MOUSE OVER IT WILL GREET YOU THANKYOU</p>
+    
+    </div>
+    <script>
+        function onclickfunction(){
+            alert("THANK YOU")
+        }
+    </script>
+</body>
+</html>
