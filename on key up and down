@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On keyup and keydown</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: lightblue;
+            font-size: 2rem ;
+            color: white;
+        }
+        .centre{
+            width: 50%;
+            text-align: center;
+        }
+        .centre input{
+            width: 100%;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="centre">
+    <input type="text" value="" id="input" placeholder="Enter any Key...">
+    <p id="dispaly"></p>
+    </div>
+    <script>
+        let inputbox=document.getElementById("input")
+        let dispalyedvalue=document.getElementById("dispaly")
+        inputbox.addEventListener("keydown",keyvalue)
+        function keyvalue(e){
+            dispalyedvalue.style.color="red"
+           dispalyedvalue.innerText="**you pressed "+  e.key;
+        }
+        inputbox.addEventListener("keyup",keyup)
+        function keyup(e){
+            dispalyedvalue.style.color="green"
+            dispalyedvalue.innerHTML="**you press keyup "+ e.key;
+        }
+    </script>
+</body>
+</html>
