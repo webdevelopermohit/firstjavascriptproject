@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">  
+    
+</head>
+<body>
+    <div class="main">
+        <h1>Counter App</h1>
+        <button id="decrementbtn">Decrese by -1</button> <button id="output">0</button> <button id="incrementbtn">increse by +1</button>
+        <div><button id="resetbtn">Restart</button></div>
+    </div>
+    <script>
+       let decrementbtn=document.getElementById("decrementbtn")
+       let incrementbtn=document.getElementById("incrementbtn")
+       let resetbtn=document.getElementById("resetbtn")
+       let displayedvalue=document.getElementById("output")
+
+       decrementbtn.addEventListener("click",decrese)
+       function decrese(){
+        let value=Number(displayedvalue.innerText)
+        if(value<=0){
+            displayedvalue.innerText=0;
+        }else{
+            displayedvalue.innerText=value-1;
+        }
+       }
+       incrementbtn.addEventListener("click",increse)
+       function increse(){
+        let value=Number(displayedvalue.innerText)
+        if(value>=100){
+            displayedvalue.innerText="it can only count upto 100"
+        }else{
+            displayedvalue.innerText=value+1;
+        }
+       }
+       resetbtn.addEventListener("click",reset)
+    function reset(){
+        let value=Number(displayedvalue.innerText)  
+        displayedvalue.innerText=0
+    }
+       
+    </script>
+</body>
+</html>
